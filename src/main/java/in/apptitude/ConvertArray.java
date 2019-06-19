@@ -19,7 +19,7 @@ public class ConvertArray {
 			System.out.println(sourceIndex);
 			int targetIndex = getIndex(sourceIndex, X, N);
 
-			// No idea why is this
+			// No idea why is this but to avoid recursive changes
 			while (targetIndex < sourceIndex) {
 				targetIndex = getIndex(targetIndex, X, N);
 				System.out.println(sourceIndex + "::" + targetIndex);
